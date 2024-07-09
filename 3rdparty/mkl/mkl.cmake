@@ -12,16 +12,14 @@ include(ExternalProject)
 
 if(WIN32)
     set(MKL_INCLUDE_URL
-        https://github.com/isl-org/Open3D/releases/download/v0.12.0/mkl-include-2020.1-intel_216-win-64.tar.bz2W
-        https://anaconda.org/intel/mkl-include/2020.1/download/win-64/mkl-include-2020.1-intel_216.tar.bz2
+        https://anaconda.org/anaconda/mkl-include/2023.1.0/download/win-64/mkl-include-2023.1.0-haa95532_46358.tar.bz2
     )
-    set(MKL_INCLUDE_SHA256 65cedb770358721fd834224cd8be1fe1cc10b37ef2a1efcc899fc2fefbeb5b31)
+    set(MKL_INCLUDE_SHA256 e83ecadc50583b0357facca3be1e217c1ea8da2f283d9d2c9cc6002ab3595d94)
 
     set(MKL_URL
-        https://github.com/isl-org/Open3D/releases/download/v0.12.0/mkl-static-2020.1-intel_216-win-64.tar.bz2
-        https://anaconda.org/intel/mkl-static/2020.1/download/win-64/mkl-static-2020.1-intel_216.tar.bz2
+        https://anaconda.org/conda-forge/mkl-static/2022.2.1/download/win-64/mkl-static-2022.2.1-h4060db9_19760.tar.bz2
     )
-    set(MKL_SHA256 c6f037aa9e53501d91d5245b6e65020399ebf34174cc4d03637818ebb6e6b6b9)
+    set(MKL_SHA256 2eac3a861b205d43e69afac2a7a25456de339d3eff8a5dd2745b77858ce61333)
 elseif(APPLE)
     set(MKL_INCLUDE_URL
         https://github.com/isl-org/Open3D/releases/download/v0.12.0/mkl-include-2020.1-intel_216-osx-64.tar.bz2
